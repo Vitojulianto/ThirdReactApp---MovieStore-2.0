@@ -63,21 +63,32 @@ function Cart() {
         <div className="mt-8 text-right ">
           <h2 className="text-lg font-medium text-gray-800">Total Items: <span className="text-pink-600">{totalItems}</span></h2>
           <h2 className="text-lg font-medium text-gray-800">Subtotal: <span className="text-pink-600">Rp.{totalPrice.toLocaleString('id-ID')}</span></h2>
-          <div className="flex justify-between items-center mt-6">
-  <Button onClick={handleBuy} className='bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded shadow'>
+          <div className="flex flex-col md:flex-row justify-between items-center mt-6 gap-4">
+
+  <Button 
+    onClick={handleBuy} 
+    className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded shadow w-full md:w-auto"
+  >
     Back to Anime
   </Button>
 
-  <div className="flex gap-4">
-    <Button onClick={clearCart} className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded shadow">
+  <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+    <Button 
+      onClick={clearCart} 
+      className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded shadow w-full md:w-auto"
+    >
       Clear Cart
     </Button>
-    <Button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded shadow"
-    onClick={handleCheckout}>
+    <Button 
+      onClick={handleCheckout} 
+      className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded shadow w-full md:w-auto"
+    >
       Checkout
     </Button>
   </div>
+  
 </div>
+
           
         </div>
       </div>
