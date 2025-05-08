@@ -85,7 +85,7 @@ export default function CheckoutPage() {
   {errors.address && <p className="text-red-500 text-sm">{errors.address.message}</p>}
 
   <h2 className="text-xl font-semibold mt-6 mb-2 text-purple-700">Payment Method</h2>
-  <div className="space-y-2">
+  <div className="space-y-2 text-black">
     <label className="flex items-center">
       <input type="radio" value="Bank Transfer" {...register("payment", { required: true })} className="mr-2" />
       Transfer Bank
