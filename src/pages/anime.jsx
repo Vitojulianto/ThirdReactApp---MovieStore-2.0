@@ -158,7 +158,7 @@ function Anime() {
                   <div className="flex justify-between items-center">
                     <span className="text-green-600 font-bold">Rp{fixedPrice.toLocaleString('id-ID')}</span>
                     <div className="flex gap-2">
-                      <Button className="btn btn-sm btn-outline" onClick={() => handleDetails(item.mal_id)}>
+                      <Button className="btn btn-sm btn-info" onClick={() => handleDetails(item.mal_id)}>
                         Details
                       </Button>
                       <Button className="btn btn-sm btn-success" onClick={() => handleBuy(item)}>
