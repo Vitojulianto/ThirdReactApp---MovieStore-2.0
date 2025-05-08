@@ -24,8 +24,8 @@ function Navbar() {
   
   <div className="hidden lg:flex flex-1 justify-center items-center">
     <ul className="menu menu-horizontal px-1 gap-6 text-md font-medium">
-      <li><Link to="/home" className="hover:text-pink-600 transition">Home</Link></li>
-      <li><Link to="/anime" className="hover:text-pink-600 transition">Anime</Link></li>
+      <li><Link to="/home" className="text-black hover:text-pink-600 transition">Home</Link></li>
+      <li><Link to="/anime" className="text-black hover:text-pink-600 transition">Anime</Link></li>
       
     </ul>
   </div>
@@ -42,8 +42,8 @@ function Navbar() {
       </svg>
     </label>
     <ul tabIndex={0} className="menu dropdown-content mt-3 p-2 shadow bg-white rounded-box w-44 z-[999]">
-      <li><Link to="/home">Home</Link></li>
-      <li><Link to="/anime">Anime</Link></li>
+      <li><Link to="/home" className='text-black'>Home</Link></li>
+      <li><Link to="/anime" className='text-black'>Anime</Link></li>
       
     </ul>
   </div>
@@ -62,7 +62,7 @@ function Navbar() {
     </div>
     <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-56 bg-white shadow-xl rounded-xl z-[999]">
       <div className="card-body">
-        <span className="text-lg font-bold">{totalItems} Items</span>
+        <span className="text-lg font-bold text-black">{totalItems} Items</span>
         <span className="text-sm text-pink-600">Subtotal:Rp.{totalPrice.toLocaleString('id-ID')}</span>
         <div className="card-actions">
           <button className="btn btn-sm btn-primary w-full"
