@@ -37,7 +37,7 @@ function LoginPage() {
       <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md w-full animate-fade-in">
         <h2 className="text-3xl font-bold text-center text-pink-600 mb-4">🌸 Anime Login 🌸</h2>
         
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-black">
           <input
             type="text"
             placeholder="Username"
