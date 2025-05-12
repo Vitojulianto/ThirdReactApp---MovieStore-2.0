@@ -1,12 +1,27 @@
-# React + Vite
+# MovieStore 2.0 🎬🍿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MovieStore 2.0 adalah versi lanjutan dari proyek Movie Store sebelumnya. Pada versi ini, saya belajar dan menerapkan `useContext` sebagai Global State Management untuk mengelola **cart**, seperti:
+- Menambahkan item ke cart
+- Menampilkan jumlah item di navbar
+- Menampilkan detail item di cart saat klik "Buy Now"
 
-Currently, two official plugins are available:
+## 🚀 Cara Install & Menjalankan Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Install dependencies:
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Jalankan aplikasi:
+npm run dev
+Aplikasi akan berjalan di http://localhost:5173/ (jika kamu menggunakan Vite).
+
+🔧 Tools & Teknologi
+React.js (Vite)
+
+useContext (Global State)
+
+JavaScript
+
+CSS / Tailwind & daisyUI
+
+LocalStorage 
