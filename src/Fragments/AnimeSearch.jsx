@@ -15,7 +15,7 @@ function AnimeSearch({ onSearch }) {
       <Input
         type="text"
         placeholder="🔍 Search your favorite anime..."
-        className="w-full px-4 py-2 border border-pink-300 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all duration-200 text-black-500"
+        className="w-full px-4 py-2 border border-pink-300 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all duration-200 text-black bg-white"
         value={input}
         onChange={handleChange}
       />
