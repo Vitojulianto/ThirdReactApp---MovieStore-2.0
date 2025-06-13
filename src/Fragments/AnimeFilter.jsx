@@ -12,7 +12,7 @@ function AnimeFilter({onFilter}) {
     
   return (
     <div>
-      <div className='p-2'>
+      <div className='p-2 text-black-500'>
       <select onChange={(e) => onFilter(e.target.value)} className='border px-2 py-1 rounded text-black-500'>
         <option value="" className="text-black-500">All Genres</option>
         {genres.map((genre) => (
