@@ -29,16 +29,16 @@ function ConfirmOrder() {
       <h1 className="text-3xl font-bold text-pink-600 mb-4">🎉 Order Confirmed!</h1>
       <div className="space-y-3 text-lg">
         <p>
-          <span className="font-semibold text-purple-700">Name:</span> {buyer.fullName}
+          <span className="font-semibold text-purple-700 bg-white">Name:</span> {buyer.fullName}
         </p>
         <p>
-          <span className="font-semibold text-purple-700">Email:</span> {buyer.email}
+          <span className="font-semibold text-purple-700 bg-white">Email:</span> {buyer.email}
         </p>
         <p>
-          <span className="font-semibold text-purple-700">Address:</span> {buyer.address}
+          <span className="font-semibold text-purple-700 bg-white">Address:</span> {buyer.address}
         </p>
         <p>
-          <span className="font-semibold text-purple-700">Payment Method:</span> {buyer.payment}
+          <span className="font-semibold text-purple-700 bg-white">Payment Method:</span> {buyer.payment}
         </p>
         <div className='flex justify-end gap-4'>
             <Button className='mt-6 px-4 bg-pink-500 hover:bg-pink-600 text-white py-3 rounded-lg text-lg font-semibold'
