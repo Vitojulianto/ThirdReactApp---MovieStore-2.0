@@ -52,25 +52,25 @@ export default function CheckoutPage() {
     ))}
   </div>
 
-  {/* Total */}
+  
   <div className="text-right font-bold text-xl text-pink-700 mt-6 border-t pt-4">
     Total: Rp {totalPrice.toLocaleString('id-ID')}
   </div>
 </div>
 
-      {/* Form Pembeli */}
-      <form onSubmit={handleSubmit(onSubmit)} className="mb-6">
+     
+<form onSubmit={handleSubmit(onSubmit)} className="mb-6">
   <h2 className="text-xl font-semibold mb-4 text-purple-700">Buyer Info</h2>
   
   <input
-    className="w-full border p-2 mb-2 rounded"
+    className="w-full border p-2 mb-2 rounded text-black"
     placeholder="Full Name"
     {...register("fullName", { required: "Full Name is required" })}
   />
   {errors.fullName && <p className="text-red-500 text-sm">{errors.fullName.message}</p>}
 
   <input
-    className="w-full border p-2 mb-2 rounded"
+    className="w-full border p-2 mb-2 rounded text-black"
     placeholder="Email"
     type="email"
     {...register("email", { required: "Email is required" })}
@@ -78,7 +78,7 @@ export default function CheckoutPage() {
   {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
 
   <textarea
-    className="w-full border p-2 mb-2 rounded"
+    className="w-full border p-2 mb-2 rounded text-black"
     placeholder="Shipping Address"
     {...register("address", { required: "Address is required" })}
   />
